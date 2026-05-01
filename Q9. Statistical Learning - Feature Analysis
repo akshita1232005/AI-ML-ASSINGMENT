@@ -1,0 +1,6 @@
+import pandas as pd
+
+df = pd.read_csv("/kaggle/input/california-housing-prices/housing.csv")
+
+print(df.describe())
+print(df.corr(numeric_only=True))
